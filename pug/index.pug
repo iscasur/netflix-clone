@@ -1,0 +1,31 @@
+include head.pug
+body
+  header
+    nav
+      h1 Netflix
+      ul
+        each item in menus
+          li=item
+      ul
+        each item in myaccount
+          li=item
+  main
+    section
+      p Nº 6 en México hoy
+      p Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque iure porro ea repellendus eligendi placeat optio reprehenderit incidunt, eveniet amet possimus, doloremque dolorem voluptatum! Reiciendis at perspiciatis iste totam tempora?
+      button Reproducir
+      button Mas información
+    section
+      h3 Populares en Netflix
+      +item("https://images.pexels.com/photos/5713353/pexels-photo-5713353.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500")
+    section
+      h3 Continuar viendo contenido de #{name}
+    section
+      h3 Tendencias
+    section
+      h3 Verlo nuevamente
+    section
+      h3 Originales de Neftlix
+    section
+      h3 Mi lista
+  include footer.pug
