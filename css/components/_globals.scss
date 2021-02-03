@@ -1,0 +1,16 @@
+$font: 'Lato', sans-serif;
+
+$primay-color: rgb(20, 20, 20);
+$secondary-color: #e50914;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: $font;
+  background-color: $primay-color;
+  color: #fff;
+}
