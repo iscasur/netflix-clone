@@ -4,11 +4,26 @@ body
     nav.menu
       h1.menu__logo Netflix
       ul.menu__primary
-        each item in menus
-          li=item
+        li
+          a(href="#") Inicio
+        li
+          a(href="#") Series
+        li
+          a(href="#") Películas
+        li
+          a(href="#") Novedades polulares
+        li
+          a(href="#") Mi lista
       ul.menu__secondary
-        each item in myaccount
-          li=item
+        li
+          a(href="#")
+            i.fas.fa-search
+        li
+          a(href="#")
+            i.fas.fa-gift
+        li
+          a(href="#")
+            i.fas.fa-bell
   main
     include ./components/hero.pug
     include ./components/popular.pug
