@@ -4,6 +4,10 @@
   position: sticky;
   top: 0;
   z-index: 10;
+  &.dark {
+    background-color: $primay-color;
+    transition: background-color 0.5s ease;
+  }
 }
 
 .menu {
@@ -23,6 +27,7 @@
   ul {
     display: flex;
     list-style: none;
+    align-items: center;
   }
   &__primary li {
     margin-left: 20px;
@@ -32,7 +37,35 @@
     right: 60px;
     font-size: 2.2rem;
     li {
+      position: relative;
       margin-right: 20px;
+      .badge {
+        background-color: $brand-color;
+        display: flex;
+        font-size: 1rem;
+        border-radius: 50%;
+        height: 1.6rem;
+        width: 1.6rem;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        right: -5px;
+      }
+      &.user {
+        position: relative;
+        background-color: orange;
+        height: 3.5rem;
+        width: 3.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.5rem;
+        .arrow {
+          position: absolute;
+          right: -2rem;
+        }
+      }
     }
   }
 }
@@ -63,15 +96,15 @@
   .info {
     position: absolute;
     bottom: 7rem;
-    width: 36%;
+    width: 560px;
   }
   &__description {
     font-size: 2.6rem;
     margin-bottom: 2rem;
   }
   button {
-    padding: 1.2rem 3rem;
-    font-size: 2.4rem;
+    padding: 1.2rem 2rem;
+    font-size: 2rem;
     font-weight: 600;
     border: 0;
     border-radius: 0.3rem;
@@ -81,7 +114,7 @@
     }
   }
   .hero__more-info {
-    opacity: 0.5;
+    opacity: 0.7;
   }
 }
 

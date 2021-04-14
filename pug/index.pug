@@ -1,6 +1,6 @@
 include head.pug
 body
-  header.header
+  header#navbar.header
     nav.menu
       h1.menu__logo Netflix
       ul.menu__primary
@@ -24,22 +24,28 @@ body
         li
           a(href="#")
             i.fas.fa-bell
+            span.badge 7
+        li.user
+          a(href="#")
+            i.fas.fa-smile-wink
+            i.fas.fa-sort-down.arrow
   main
     include ./components/hero.pug
     include ./components/popular.pug
-    section.continue.row
-      .wrapper
-        h3.continue__title Continuar viendo contenido de #{name}
-    section.trendy.row
-      .wrapper
-        h3.trendy__title Tendencias
-    section.again.row
-      .wrapper
-        h3.again__title Verlo nuevamente
-    section.originals.row
-      .wrapper
-        h3.originals__title Originales de Neftlix
-    section.mylist.row
-      .wrapper
-        h3.mylist__title Mi lista
+    //- section.continue.row
+    //-   .wrapper
+    //-     h3.continue__title Continuar viendo contenido de #{name}
+    //- section.trendy.row
+    //-   .wrapper
+    //-     h3.trendy__title Tendencias
+    //- section.again.row
+    //-   .wrapper
+    //-     h3.again__title Verlo nuevamente
+    //- section.originals.row
+    //-   .wrapper
+    //-     h3.originals__title Originales de Neftlix
+    //- section.mylist.row
+    //-   .wrapper
+    //-     h3.mylist__title Mi lista
   include footer.pug
+  script(src="../js/index.js") 

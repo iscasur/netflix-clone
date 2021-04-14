@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neftlix</title>
+    <title>Netflix</title>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&amp;display=swap">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
@@ -11,7 +11,7 @@
   <body></body>
 </html>
 <body>
-  <header class="header">
+  <header class="header" id="navbar">
     <nav class="menu">
       <h1 class="menu__logo">Netflix</h1>
       <ul class="menu__primary">
@@ -24,7 +24,8 @@
       <ul class="menu__secondary">
         <li><a href="#"><i class="fas fa-search"></i></a></li>
         <li><a href="#"><i class="fas fa-gift"></i></a></li>
-        <li><a href="#"><i class="fas fa-bell"></i></a></li>
+        <li><a href="#"><i class="fas fa-bell"></i><span class="badge">7</span></a></li>
+        <li class="user"><a href="#"><i class="fas fa-smile-wink"></i><i class="fas fa-sort-down arrow"></i></a></li>
       </ul>
     </nav>
   </header>
@@ -46,32 +47,16 @@
           <div class="carrousel__item">
             <figure><img src="https://images.pexels.com/photos/5713353/pexels-photo-5713353.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=300"/></figure>
           </div>
+          <div class="carrousel__item">
+            <figure><img src="https://images.pexels.com/photos/3136673/pexels-photo-3136673.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=300"/></figure>
+          </div>
+          <div class="carrousel__item">
+            <figure><img src="https://images.pexels.com/photos/2079234/pexels-photo-2079234.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=300"/></figure>
+          </div>
+          <div class="carrousel__item">
+            <figure><img src="https://images.pexels.com/photos/434090/pexels-photo-434090.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=300"/></figure>
+          </div>
         </div>
-      </div>
-    </section>
-    <section class="continue row">
-      <div class="wrapper">
-        <h3 class="continue__title">Continuar viendo contenido de Israel Castro</h3>
-      </div>
-    </section>
-    <section class="trendy row">
-      <div class="wrapper">
-        <h3 class="trendy__title">Tendencias</h3>
-      </div>
-    </section>
-    <section class="again row">
-      <div class="wrapper">
-        <h3 class="again__title">Verlo nuevamente</h3>
-      </div>
-    </section>
-    <section class="originals row">
-      <div class="wrapper">
-        <h3 class="originals__title">Originales de Neftlix</h3>
-      </div>
-    </section>
-    <section class="mylist row">
-      <div class="wrapper">
-        <h3 class="mylist__title">Mi lista</h3>
       </div>
     </section>
   </main>
@@ -109,4 +94,5 @@
     </section>
   </footer>
   <script src=""></script>
+  <script src="../js/index.js"> </script>
 </body>
