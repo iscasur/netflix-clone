@@ -19,6 +19,23 @@ a {
   color: #fff;
 }
 
+.row {
+  margin: 3vw 0;
+}
+
+h3[class$='title'] {
+  font-size: 2.6rem;
+  font-weight: 600;
+  line-height: 2;
+}
+
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -29,6 +46,10 @@ a {
           align-items: center;
   padding: 0 60px;
   font-size: 14px;
+}
+
+.menu a {
+  text-decoration: none;
 }
 
 .menu__logo {
@@ -51,6 +72,61 @@ a {
 .menu__secondary {
   position: absolute;
   right: 60px;
+  font-size: 2.2rem;
+}
+
+.menu__secondary li {
+  margin-right: 20px;
+}
+
+.wrapper {
+  padding: 0 60px;
+}
+
+.hero {
+  background-image: url("https://images.unsplash.com/photo-1485846234645-a62644f84728?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1340&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  margin-top: -7rem;
+}
+
+.hero .wrapper {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, black), color-stop(transparent), color-stop(transparent), color-stop(transparent), to(transparent));
+  background: linear-gradient(to bottom, black 0, transparent, transparent, transparent, transparent);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+}
+
+.hero .info {
+  position: absolute;
+  bottom: 7rem;
+  width: 36%;
+}
+
+.hero__description {
+  font-size: 2.6rem;
+  margin-bottom: 2rem;
+}
+
+.hero button {
+  padding: 1.2rem 3rem;
+  font-size: 2.4rem;
+  font-weight: 600;
+  border: 0;
+  border-radius: 0.3rem;
+  margin-right: 1.6rem;
+}
+
+.hero button i {
+  margin-right: 1.6rem;
+}
+
+.hero .hero__more-info {
+  opacity: 0.5;
 }
 
 .carrousel {
@@ -71,9 +147,19 @@ a {
 
 .footer {
   max-width: 980px;
-  margin: 20px auto 0;
+  margin: 20px auto;
   padding: 0 4%;
   color: gray;
+  font-size: 1.2rem;
+}
+
+.footer a {
+  color: gray;
+  text-decoration: none;
+}
+
+.footer__social {
+  margin-bottom: 2rem;
 }
 
 .footer__social ul {
@@ -81,10 +167,16 @@ a {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
+  font-size: 3rem;
+}
+
+.footer__social ul i {
+  margin-right: 2rem;
 }
 
 .footer__links {
   font-size: 1.3rem;
+  margin-bottom: 2rem;
 }
 
 .footer__links ul {
@@ -105,5 +197,13 @@ a {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 25%;
           flex: 0 0 25%;
+}
+
+.footer__copy-right button {
+  background-color: transparent;
+  color: gray;
+  border: 1px solid gray;
+  padding: 0.7rem;
+  margin-bottom: 2rem;
 }
 /*# sourceMappingURL=styles.css.map */

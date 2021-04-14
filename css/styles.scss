@@ -1,4 +1,10 @@
-@import "./components/globals";
+@import './components/globals';
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
 
 .menu {
   display: flex;
@@ -6,6 +12,9 @@
   align-items: center;
   padding: 0 60px;
   font-size: 14px;
+  a {
+    text-decoration: none;
+  }
   &__logo {
     text-transform: uppercase;
     color: $brand-color;
@@ -21,6 +30,58 @@
   &__secondary {
     position: absolute;
     right: 60px;
+    font-size: 2.2rem;
+    li {
+      margin-right: 20px;
+    }
+  }
+}
+
+.wrapper {
+  padding: 0 60px;
+}
+
+.hero {
+  background-image: url('https://images.unsplash.com/photo-1485846234645-a62644f84728?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1340&q=80');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  margin-top: -7rem;
+  .wrapper {
+    background: linear-gradient(
+      to bottom,
+      black 0,
+      transparent,
+      transparent,
+      transparent,
+      transparent
+    );
+    display: flex;
+    height: 100vh;
+  }
+  .info {
+    position: absolute;
+    bottom: 7rem;
+    width: 36%;
+  }
+  &__description {
+    font-size: 2.6rem;
+    margin-bottom: 2rem;
+  }
+  button {
+    padding: 1.2rem 3rem;
+    font-size: 2.4rem;
+    font-weight: 600;
+    border: 0;
+    border-radius: 0.3rem;
+    margin-right: 1.6rem;
+    i {
+      margin-right: 1.6rem;
+    }
+  }
+  .hero__more-info {
+    opacity: 0.5;
   }
 }
 
@@ -40,17 +101,28 @@
 
 .footer {
   max-width: 980px;
-  margin: 20px auto 0;
+  margin: 20px auto;
   padding: 0 4%;
   color: gray;
+  font-size: 1.2rem;
+  a {
+    color: gray;
+    text-decoration: none;
+  }
   &__social {
+    margin-bottom: 2rem;
     ul {
       display: flex;
       list-style: none;
+      font-size: 3rem;
+      i {
+        margin-right: 2rem;
+      }
     }
   }
   &__links {
     font-size: 1.3rem;
+    margin-bottom: 2rem;
     ul {
       list-style: none;
       display: flex;
@@ -60,6 +132,15 @@
     li {
       margin-bottom: 1rem;
       flex: 0 0 25%;
+    }
+  }
+  &__copy-right {
+    button {
+      background-color: transparent;
+      color: gray;
+      border: 1px solid gray;
+      padding: 0.7rem;
+      margin-bottom: 2rem;
     }
   }
 }

@@ -23,3 +23,13 @@ body {
 a {
   color: $secondary-color;
 }
+
+.row {
+  margin: 3vw 0;
+}
+
+h3[class$='title'] {
+  font-size: 2.6rem;
+  font-weight: 600;
+  line-height: 2;
+}

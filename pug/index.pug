@@ -1,6 +1,6 @@
 include head.pug
 body
-  header
+  header.header
     nav.menu
       h1.menu__logo Netflix
       ul.menu__primary
@@ -27,14 +27,19 @@ body
   main
     include ./components/hero.pug
     include ./components/popular.pug
-    section.continue
-      h3 Continuar viendo contenido de #{name}
-    section.trendy
-      h3 Tendencias
-    section.again
-      h3 Verlo nuevamente
-    section.originals
-      h3 Originales de Neftlix
-    section.mylist
-      h3 Mi lista
+    section.continue.row
+      .wrapper
+        h3.continue__title Continuar viendo contenido de #{name}
+    section.trendy.row
+      .wrapper
+        h3.trendy__title Tendencias
+    section.again.row
+      .wrapper
+        h3.again__title Verlo nuevamente
+    section.originals.row
+      .wrapper
+        h3.originals__title Originales de Neftlix
+    section.mylist.row
+      .wrapper
+        h3.mylist__title Mi lista
   include footer.pug

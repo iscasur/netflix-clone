@@ -11,7 +11,7 @@
   <body></body>
 </html>
 <body>
-  <header>
+  <header class="header">
     <nav class="menu">
       <h1 class="menu__logo">Netflix</h1>
       <ul class="menu__primary">
@@ -30,42 +30,49 @@
   </header>
   <main>
     <section class="hero">
-      <h3 class="hero__title">Nº 6 en México hoy</h3>
-      <p class="hero__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque iure porro ea repellendus eligendi placeat optio reprehenderit incidunt, eveniet amet possimus, doloremque dolorem voluptatum! Reiciendis at perspiciatis iste totam tempora?</p>
-      <button class="hero__play">Reproducir</button>
-      <button class="hero__more-info">Mas información</button>
-    </section>
-    <section class="popular">
-      <h3 class="popular__title">Populares en Netflix</h3>
-      <div class="carrousel">
-        <div class="carrousel__item">
-          <figure><img src="https://images.pexels.com/photos/5713353/pexels-photo-5713353.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=300"/></figure>
-        </div>
-        <div class="carrousel__item">
-          <figure><img src="https://images.pexels.com/photos/5713353/pexels-photo-5713353.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=300"/></figure>
-        </div>
-        <div class="carrousel__item">
-          <figure><img src="https://images.pexels.com/photos/5713353/pexels-photo-5713353.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=300"/></figure>
-        </div>
-        <div class="carrousel__item">
-          <figure><img src="https://images.pexels.com/photos/5713353/pexels-photo-5713353.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=300"/></figure>
+      <div class="wrapper">
+        <div class="info">
+          <h3 class="hero__title">Nº 6 en México hoy</h3>
+          <p class="hero__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dolorem voluptatum! Reiciendis at perspiciatis iste totam tempora?</p>
+          <button class="hero__play"><i class="fas fa-play"></i>Reproducir</button>
+          <button class="hero__more-info"><i class="fas fa-info-circle"></i>Mas información</button>
         </div>
       </div>
     </section>
-    <section class="continue">
-      <h3>Continuar viendo contenido de Israel Castro</h3>
+    <section class="popular row">
+      <div class="wrapper">
+        <h3 class="popular__title">Populares en Netflix</h3>
+        <div class="carrousel">
+          <div class="carrousel__item">
+            <figure><img src="https://images.pexels.com/photos/5713353/pexels-photo-5713353.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=300"/></figure>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="trendy">
-      <h3>Tendencias</h3>
+    <section class="continue row">
+      <div class="wrapper">
+        <h3 class="continue__title">Continuar viendo contenido de Israel Castro</h3>
+      </div>
     </section>
-    <section class="again">
-      <h3>Verlo nuevamente</h3>
+    <section class="trendy row">
+      <div class="wrapper">
+        <h3 class="trendy__title">Tendencias</h3>
+      </div>
     </section>
-    <section class="originals">
-      <h3>Originales de Neftlix</h3>
+    <section class="again row">
+      <div class="wrapper">
+        <h3 class="again__title">Verlo nuevamente</h3>
+      </div>
     </section>
-    <section class="mylist">
-      <h3>Mi lista</h3>
+    <section class="originals row">
+      <div class="wrapper">
+        <h3 class="originals__title">Originales de Neftlix</h3>
+      </div>
+    </section>
+    <section class="mylist row">
+      <div class="wrapper">
+        <h3 class="mylist__title">Mi lista</h3>
+      </div>
     </section>
   </main>
   <footer class="footer">
@@ -80,23 +87,23 @@
     <section class="footer__links">
       <div>
         <ul>
-          <li>Audio y subtitulos</li>
-          <li>Audio descriptivo</li>
-          <li>Centro de ayuda</li>
-          <li>Tarjetas de regalo</li>
-          <li>Prensa</li>
-          <li>Relaciones con inversionistas</li>
-          <li>Empleo</li>
-          <li>Términos de uso</li>
-          <li>Privacidad</li>
-          <li>Avisos legales</li>
-          <li>Preferencias de cookies</li>
-          <li>Información corporativa</li>
-          <li>Contáctanos</li>
+          <li><a href="#">Audio y subtitulos</a></li>
+          <li><a href="#">Audio descriptivo</a></li>
+          <li><a href="#">Centro de ayuda</a></li>
+          <li><a href="#">Tarjetas de regalo</a></li>
+          <li><a href="#">Prensa</a></li>
+          <li><a href="#">Relaciones con inversionistas</a></li>
+          <li><a href="#">Empleo</a></li>
+          <li><a href="#">Términos de uso</a></li>
+          <li><a href="#">Privacidad</a></li>
+          <li><a href="#">Avisos legales</a></li>
+          <li><a href="#">Preferencias de cookies</a></li>
+          <li><a href="#">Información corporativa</a></li>
+          <li><a href="#">Contáctanos</a></li>
         </ul>
       </div>
     </section>
-    <section>
+    <section class="footer__copy-right">
       <button>Código de servicio</button>
       <p>© 1997-2021 Neflitx, Inc.</p>
     </section>
