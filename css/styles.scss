@@ -75,12 +75,26 @@
 }
 
 .hero {
-  background-image: url('https://images.unsplash.com/photo-1485846234645-a62644f84728?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1340&q=80');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  // background-image: url('https://images.unsplash.com/photo-1485846234645-a62644f84728?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1340&q=80');
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // background-position: center;
   height: 100vh;
   margin-top: -7rem;
+  &__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    overflow: hidden;
+    iframe {
+      width: 100vw;
+      height: 56.25vw;
+      position: absolute;
+    }
+  }
   .wrapper {
     background: linear-gradient(
       to bottom,
