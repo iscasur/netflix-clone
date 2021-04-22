@@ -2,6 +2,8 @@
 
 This is a clone of a popular streaming platform for videos.
 
+Site: [https://iscasur.github.io/netflix-clone/](https://iscasur.github.io/netflix-clone/)
+
 ![Netflix clone](./img/netflix_clone.png)
 
 ## Getting started 🚀

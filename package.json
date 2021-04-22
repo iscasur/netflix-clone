@@ -1,0 +1,24 @@
+{
+  "name": "netflix-clone",
+  "version": "1.0.0",
+  "description": "This is a clone of a popular streaming platform for videos.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "pug pug/index.pug -P -o ./ && sass ./css/styles.scss ./css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iscasur/netflix-clone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iscasur/netflix-clone/issues"
+  },
+  "homepage": "https://github.com/iscasur/netflix-clone#readme",
+  "devDependencies": {
+    "pug-cli": "^1.0.0-alpha6",
+    "sass": "^1.32.11"
+  }
+}

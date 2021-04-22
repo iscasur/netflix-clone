@@ -1,6 +1,6 @@
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   background-color: #141414;
   color: #fff;
 }
@@ -48,8 +48,8 @@ h3[class$='title'] {
   display: flex;
   height: 70px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 0 60px;
   font-size: 14px;
 }
@@ -70,8 +70,8 @@ h3[class$='title'] {
   display: flex;
   list-style: none;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .menu__primary li {
@@ -99,11 +99,11 @@ h3[class$='title'] {
   height: 1.6rem;
   width: 1.6rem;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   position: absolute;
   top: 0;
   right: -5px;
@@ -118,11 +118,11 @@ h3[class$='title'] {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   border-radius: 0.5rem;
 }
 
@@ -157,8 +157,24 @@ h3[class$='title'] {
 }
 
 .hero .wrapper {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, black), color-stop(transparent), color-stop(transparent), color-stop(transparent), to(transparent));
-  background: linear-gradient(to bottom, black 0, transparent, transparent, transparent, transparent);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0, black),
+    color-stop(transparent),
+    color-stop(transparent),
+    color-stop(transparent),
+    to(transparent)
+  );
+  background: linear-gradient(
+    to bottom,
+    black 0,
+    transparent,
+    transparent,
+    transparent,
+    transparent
+  );
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -196,8 +212,8 @@ h3[class$='title'] {
 .carrousel {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (250px)[4];
-      grid-template-columns: repeat(4, 250px);
+  -ms-grid-columns: (250px) [4];
+  grid-template-columns: repeat(4, 250px);
   grid-gap: 20px;
 }
 
@@ -205,7 +221,7 @@ h3[class$='title'] {
   width: 100%;
   height: 165px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 3px;
 }
 
@@ -250,17 +266,17 @@ h3[class$='title'] {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .footer__links li {
   margin-bottom: 1rem;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 25%;
-          flex: 0 0 25%;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
 }
 
 .footer__copy-right button {
