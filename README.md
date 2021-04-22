@@ -21,7 +21,7 @@ git clone https://github.com/iscasur/netflix-clone
 cd netflix-clone
 ```
 
-3. Install the dependecies
+3. Install
 
 ```bash
 npm install
@@ -46,7 +46,3 @@ If you want to contribute with this project, just make a Pull Request explaning 
 ## License 📃
 
 This proyect is MIT licensed
-
-```
-
-```
