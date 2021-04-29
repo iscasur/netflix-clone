@@ -34,14 +34,16 @@ rigthArrow.addEventListener('click', () => {
   rows.scrollLeft += rows.offsetWidth;
 });
 
-const accessKey = aadSocsmWTjPn6vTCVMHHE5KNYptnq0RwPqhlTFols8;
-const endPoint = 'https://api.unsplash.com/search/photos';
+movies.forEach((movie) => {
+  movie.addEventListener('mouseenter', (e) => {
+    const element = e.currentTarget;
+    setTimeout(() => {
+      movies.forEach((movie) => movie.classList.remove('hover'));
+      element.classList.add('hover');
+    }, 300);
+  });
+});
 
-async function getImages(query) {
-  let response = await fetch(
-    endPoint + '?query=' + query + '&client_id=' + accessKey
-  );
-  let jsonResponse = await response.json();
-  let imagesList = await jsonResponse.results;
-  console.log(imagesList);
-}
+rows.addEventListener('mouseleave', () => {
+  movies.forEach((movie) => movie.classList.remove('hover'));
+});

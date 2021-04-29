@@ -310,6 +310,13 @@ h3[class$='title'] {
   border-radius: 3px;
 }
 
+.general-content .carrousel-content .carrousel__item:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
 .footer {
   max-width: 980px;
   margin: 20px auto;
