@@ -39,6 +39,40 @@
     li {
       position: relative;
       margin-right: 20px;
+      &.search-box {
+        position: relative;
+        width: 250px;
+        .search-box__icon {
+          position: absolute;
+          top: 7px;
+          z-index: 10;
+          cursor: pointer;
+          transition: ease transform 1s;
+          transition-delay: 50ms;
+          right: 0;
+        }
+        .search-box__input {
+          outline: none;
+          background: transparent;
+          border: solid 1px rgba(255, 255, 255, 0.85);
+          padding: 1rem;
+          padding-left: 4rem;
+          font-size: 1.3rem;
+          color: $secondary-color;
+          width: 0%;
+          transition: ease-out width 1s, ease opacity 1s;
+          opacity: 0;
+        }
+        &.active {
+          .search-box__icon {
+            transform: translateX(-214px);
+          }
+          .search-box__input {
+            opacity: 1;
+            width: 100%;
+          }
+        }
+      }
       .badge {
         background-color: $brand-color;
         display: flex;
@@ -135,7 +169,7 @@
 .carrousel {
   display: grid;
   grid-template-columns: repeat(4, 250px);
-  grid-gap: 20px;
+  grid-gap: 10px;
   &__item {
   }
   &__item img {
