@@ -298,8 +298,10 @@ h3[class$='title'] {
   min-width: 20%;
   -webkit-transition: 0.3s ease all;
   transition: 0.3s ease all;
+  position: relative;
   -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
           box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  font-size: 1vw;
 }
 
 .general-content .carrousel-content .carrousel__item img {
@@ -315,6 +317,41 @@ h3[class$='title'] {
           transform: scale(1.2);
   -webkit-transform-origin: center;
           transform-origin: center;
+}
+
+.general-content .carrousel-content .carrousel__item .overlay {
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+}
+
+.general-content .carrousel-content .carrousel__item .overlay .play-button {
+  height: 50%;
+}
+
+.general-content .carrousel-content .carrousel__item .overlay .play-button .fa-play-circle {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  translatey: -50%;
+  font-size: 3vw;
+  color: #ffffff;
+}
+
+.general-content .carrousel-content .carrousel__item .overlay .description {
+  position: absolute;
+  padding-left: 3%;
+  padding-bottom: 3%;
+  overflow: hidden;
+  bottom: 0;
 }
 
 .footer {

@@ -2,10 +2,15 @@
 -var menus = ["Inicio", "Series", "Películas", "Novedades populares", "Mi lista"]
 -var myaccount = ["Buscar", "Referidos", "Notificaciones", "Mi cuenta"]
 
-mixin item(img)
+mixin item(img, title)
   .carrousel__item
     figure
       img(src=img)
+    .overlay
+      .play-button
+        i.far.fa-play-circle
+      .description
+        span.title=title
 
 doctype html
 html(lang="es")
