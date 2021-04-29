@@ -188,6 +188,7 @@
       &:hover {
         background-color: rgba(0, 0, 0, 0.9);
         color: rgba(255, 255, 255, 0.9);
+        z-index: 1000;
       }
     }
     &.right-arrow {
@@ -195,6 +196,7 @@
       &:hover {
         background-color: rgba(0, 0, 0, 0.9);
         color: rgba(255, 255, 255, 0.9);
+        z-index: 1000;
       }
     }
   }
@@ -222,10 +224,10 @@
         &:hover {
           transform: scale(1.2);
           transform-origin: center;
+          z-index: 100;
         }
         & .overlay {
           position: absolute;
-          z-index: 9999;
           top: 0;
           bottom: 0;
           left: 0;

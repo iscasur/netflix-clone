@@ -267,6 +267,7 @@ h3[class$='title'] {
 .general-content button.left-arrow:hover {
   background-color: rgba(0, 0, 0, 0.9);
   color: rgba(255, 255, 255, 0.9);
+  z-index: 1000;
 }
 
 .general-content button.right-arrow {
@@ -276,6 +277,7 @@ h3[class$='title'] {
 .general-content button.right-arrow:hover {
   background-color: rgba(0, 0, 0, 0.9);
   color: rgba(255, 255, 255, 0.9);
+  z-index: 1000;
 }
 
 .general-content .carrousel-content {
@@ -317,11 +319,11 @@ h3[class$='title'] {
           transform: scale(1.2);
   -webkit-transform-origin: center;
           transform-origin: center;
+  z-index: 100;
 }
 
 .general-content .carrousel-content .carrousel__item .overlay {
   position: absolute;
-  z-index: 9999;
   top: 0;
   bottom: 0;
   left: 0;
