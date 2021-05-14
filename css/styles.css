@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   padding: 0;
@@ -201,7 +202,7 @@ h3[class$=title] {
   background: rgba(0, 0, 0, 0);
   font-size: 40px;
   height: 50%;
-  top: calc(50% - 25%);
+  top: calc(50% - 40%);
   line-height: 40px;
   width: 50px;
   color: rgba(255, 255, 255, 0);
@@ -266,7 +267,7 @@ h3[class$=title] {
 .general-content .carousel-content .carousel__item .overlay__icons {
   display: flex;
   position: relative;
-  font-size: 2rem;
+  font-size: 1.6rem;
   margin-bottom: 0.5rem;
 }
 .general-content .carousel-content .carousel__item .overlay__icons i {
@@ -300,13 +301,26 @@ h3[class$=title] {
   font-size: 1rem;
   color: #999;
 }
+.general-content .carousel-content .carousel__item .overlay__tags {
+  overflow: hidden;
+}
 .general-content .carousel-content .carousel__item .overlay__tags .tags {
   list-style: none;
+  font-size: 1.2rem;
   display: flex;
-  font-size: 1.4rem;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 .general-content .carousel-content .carousel__item .overlay__tags .tags li {
   margin-right: 2rem;
+}
+.general-content .carousel-content .carousel__item .overlay__tags .tags li::before {
+  content: "•";
+  color: #999;
+  font-weight: bold;
+  display: inline-block;
+  width: 1rem;
+  margin-left: -1rem;
 }
 
 .footer {

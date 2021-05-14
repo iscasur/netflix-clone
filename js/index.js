@@ -23,14 +23,15 @@ function activateSearch() {
 }
 
 // Video from hero
-const iframe = document.querySelector('iframe')
+const iframe = document.querySelector('iframe');
 const player = new Vimeo.Player(iframe);
-const playButton = document.querySelector('button')
+const playButton = document.querySelector('button');
 
 playButton.addEventListener('click', () => {
-  player.requestFullscreen().then(function() {
-  }).catch(function(error) {
-  })
+  player
+    .requestFullscreen()
+    .then(function () {})
+    .catch(function (error) {});
 });
 
 // Carousel navigation
@@ -86,3 +87,48 @@ movies.forEach((movie) => {
 rows.addEventListener('mouseleave', () => {
   movies.forEach((movie) => movie.classList.remove('hover'));
 });
+
+// TMDB
+const API_KEY = '1d03f299b56b7d787bfc3da24f419706';
+const baseURL = 'https://api.themoviedb.org/3/';
+// const baseImageURL = 'http://image.tmdb.org/t/p/';
+
+let configData = null;
+let baseImageURL = null;
+
+let getConfig = function () {
+  let url = ''.concat(baseURL, 'configuration?api_key=', API_KEY);
+  fetch(url)
+    .then((result) => {
+      return result.json();
+    })
+    .then((data) => {
+      baseImageURL = data.images.secure_base_url;
+      configData = data.images;
+      console.log(data);
+      console.log(Object.entries(data.images));
+      console.log('Config fetched');
+    })
+    .catch(function (err) {
+      console.log(err);
+    });
+};
+
+let getTrendy;
+
+// document.addEventListener('DOMContentLoaded', getConfig);
+
+/*
+
+fetch(base_uri + 'list/1' + '?api_key=' + API_KEY)
+  .then((response) => response.json())
+  .then((data) => console.log(data))
+  .catch((error) => console.log(error));
+
+// Trendy
+fetch(base_uri + 'trending/all/week' + '?api_key=' + API_KEY)
+  .then((response) => response.json())
+  .then((data) => console.log(data))
+  .catch((error) => console.log(error));
+
+  */
