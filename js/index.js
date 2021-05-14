@@ -20,12 +20,37 @@ function activateSearch() {
   searchBox.classList.toggle('active');
 }
 
+const iframe = document.querySelector('iframe')
+const player = new Vimeo.Player(iframe);
+
+const playButton = document.querySelector('button')
+
+playButton.addEventListener('click', () => {
+  player.requestFullscreen().then(function() {
+  }).catch(function(error) {
+
+  })
+});
+
 const rows = document.querySelector('.carrousel-content');
 const movies = document.querySelectorAll('.carrousel__item');
 
-const leftArrow = document.getElementById('left-arrow');
-const rigthArrow = document.getElementById('right-arrow');
+const leftArrow = document.querySelectorAll('.left-arrow');
+const rigthArrow = document.querySelectorAll('.right-arrow');
 
+[...leftArrow].map(item => {
+  item.addEventListener('click', () => {
+    rows.scrollLeft -= rows.offsetWidth;
+  })
+});
+
+[...rigthArrow].map(item => {
+  item.addEventListener('click', () => {
+    rows.scrollLeft += rows.offsetWidth;
+  })
+});
+
+/*
 leftArrow.addEventListener('click', () => {
   rows.scrollLeft -= rows.offsetWidth;
 });
@@ -33,6 +58,7 @@ leftArrow.addEventListener('click', () => {
 rigthArrow.addEventListener('click', () => {
   rows.scrollLeft += rows.offsetWidth;
 });
+*/
 
 movies.forEach((movie) => {
   movie.addEventListener('mouseenter', (e) => {

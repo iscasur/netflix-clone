@@ -1,6 +1,5 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
@@ -23,89 +22,67 @@ a {
   margin: 3vw 0;
 }
 
-h3[class$='title'] {
+h3[class$=title] {
   font-size: 2.6rem;
   font-weight: 600;
   line-height: 2;
 }
 
 .header {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 10;
 }
-
 .header.dark {
   background-color: #141414;
-  -webkit-transition: background-color 0.5s ease;
   transition: background-color 0.5s ease;
 }
 
 .menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 70px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 0 60px;
   font-size: 14px;
 }
-
 .menu a {
   text-decoration: none;
 }
-
 .menu__logo {
   text-transform: uppercase;
   color: #e50914;
   margin-right: 25px;
 }
-
 .menu ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   list-style: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .menu__primary li {
   margin-left: 20px;
 }
-
 .menu__secondary {
   position: absolute;
   right: 60px;
   font-size: 2.2rem;
 }
-
 .menu__secondary li {
   position: relative;
   margin-right: 20px;
 }
-
 .menu__secondary li.search-box {
   position: relative;
   width: 250px;
 }
-
 .menu__secondary li.search-box .search-box__icon {
   position: absolute;
   top: 7px;
   z-index: 10;
   cursor: pointer;
-  -webkit-transition: ease transform 1s;
   transition: ease transform 1s;
-  -webkit-transition-delay: 50ms;
-          transition-delay: 50ms;
+  transition-delay: 50ms;
   right: 0;
 }
-
 .menu__secondary li.search-box .search-box__input {
   outline: none;
   background: transparent;
@@ -115,58 +92,39 @@ h3[class$='title'] {
   font-size: 1.3rem;
   color: #fff;
   width: 0%;
-  -webkit-transition: ease-out width 1s, ease opacity 1s;
   transition: ease-out width 1s, ease opacity 1s;
   opacity: 0;
 }
-
 .menu__secondary li.search-box.active .search-box__icon {
-  -webkit-transform: translateX(-214px);
-          transform: translateX(-214px);
+  transform: translateX(-214px);
 }
-
 .menu__secondary li.search-box.active .search-box__input {
   opacity: 1;
   width: 100%;
 }
-
 .menu__secondary li .badge {
   background-color: #e50914;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font-size: 1rem;
   border-radius: 50%;
   height: 1.6rem;
   width: 1.6rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   top: 0;
   right: -5px;
 }
-
 .menu__secondary li.user {
   position: relative;
   background-color: orange;
   height: 3.5rem;
   width: 3.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   border-radius: 0.5rem;
 }
-
 .menu__secondary li.user .arrow {
   position: absolute;
   right: -2rem;
@@ -180,7 +138,6 @@ h3[class$='title'] {
   height: 100vh;
   margin-top: -7rem;
 }
-
 .hero__video {
   position: absolute;
   top: 0;
@@ -190,33 +147,28 @@ h3[class$='title'] {
   z-index: -1;
   overflow: hidden;
 }
-
 .hero__video iframe {
   width: 100vw;
   height: 56.25vw;
   position: absolute;
 }
-
 .hero .wrapper {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, black), color-stop(transparent), color-stop(transparent), color-stop(transparent), to(transparent));
   background: linear-gradient(to bottom, black 0, transparent, transparent, transparent, transparent);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 100vh;
 }
-
 .hero .info {
   position: absolute;
   bottom: 7rem;
   width: 560px;
 }
-
 .hero__description {
   font-size: 2.6rem;
   margin-bottom: 2rem;
 }
-
+.hero__play {
+  cursor: pointer;
+}
 .hero button {
   padding: 1.2rem 2rem;
   font-size: 2rem;
@@ -225,25 +177,18 @@ h3[class$='title'] {
   border-radius: 0.3rem;
   margin-right: 1.6rem;
 }
-
 .hero button i {
   margin-right: 1.6rem;
 }
-
 .hero .hero__more-info {
   opacity: 0.7;
 }
 
 .general-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   position: relative;
 }
-
 .general-content button {
   position: absolute;
   border: none;
@@ -256,72 +201,53 @@ h3[class$='title'] {
   color: rgba(255, 255, 255, 0);
   cursor: pointer;
   z-index: 500;
-  -webkit-transition: 0.2s ease all;
   transition: 0.2s ease all;
 }
-
 .general-content button.left-arrow {
   left: 0;
 }
-
 .general-content button.left-arrow:hover {
   background-color: rgba(0, 0, 0, 0.9);
   color: rgba(255, 255, 255, 0.9);
   z-index: 1000;
 }
-
 .general-content button.right-arrow {
   right: 0;
 }
-
 .general-content button.right-arrow:hover {
   background-color: rgba(0, 0, 0, 0.9);
   color: rgba(255, 255, 255, 0.9);
   z-index: 1000;
 }
-
 .general-content .carrousel-content {
   width: 100%;
   padding: 20px 0;
   overflow: hidden;
   scroll-behavior: smooth;
 }
-
 .general-content .carrousel-content .carrousel {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  flex-wrap: nowrap;
   gap: 1rem;
 }
-
 .general-content .carrousel-content .carrousel__item {
   min-width: 20%;
-  -webkit-transition: 0.3s ease all;
   transition: 0.3s ease all;
   position: relative;
-  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   font-size: 1vw;
 }
-
 .general-content .carrousel-content .carrousel__item img {
   width: 100%;
   height: 180px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 3px;
 }
-
 .general-content .carrousel-content .carrousel__item:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-transform-origin: center;
-          transform-origin: center;
+  transform: scale(1.2);
+  transform-origin: center;
   z-index: 100;
 }
-
 .general-content .carrousel-content .carrousel__item .overlay {
   position: absolute;
   top: 0;
@@ -332,22 +258,18 @@ h3[class$='title'] {
   width: 100%;
   opacity: 1;
 }
-
 .general-content .carrousel-content .carrousel__item .overlay .play-button {
   height: 50%;
 }
-
 .general-content .carrousel-content .carrousel__item .overlay .play-button .fa-play-circle {
   position: absolute;
   top: 40%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   translatey: -50%;
   font-size: 3vw;
   color: #ffffff;
 }
-
 .general-content .carrousel-content .carrousel__item .overlay .description {
   position: absolute;
   padding-left: 3%;
@@ -363,53 +285,35 @@ h3[class$='title'] {
   color: gray;
   font-size: 1.2rem;
 }
-
 .footer a {
   color: gray;
   text-decoration: none;
 }
-
 .footer__social {
   margin-bottom: 2rem;
 }
-
 .footer__social ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   list-style: none;
   font-size: 3rem;
 }
-
 .footer__social ul i {
   margin-right: 2rem;
 }
-
 .footer__links {
   font-size: 1.3rem;
   margin-bottom: 2rem;
 }
-
 .footer__links ul {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-
 .footer__links li {
   margin-bottom: 1rem;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 25%;
-          flex: 0 0 25%;
+  flex: 0 0 25%;
 }
-
 .footer__copy-right button {
   background-color: transparent;
   color: gray;
@@ -417,4 +321,5 @@ h3[class$='title'] {
   padding: 0.7rem;
   margin-bottom: 2rem;
 }
+
 /*# sourceMappingURL=styles.css.map */
