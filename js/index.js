@@ -32,33 +32,45 @@ playButton.addEventListener('click', () => {
   })
 });
 
-const rows = document.querySelector('.carrousel-content');
-const movies = document.querySelectorAll('.carrousel__item');
+const rows = document.querySelector('.carousel-content');
+const movies = document.querySelectorAll('.carousel__item');
 
-const leftArrow = document.querySelectorAll('.left-arrow');
-const rigthArrow = document.querySelectorAll('.right-arrow');
+const rowsPopular = document.querySelector('.populars');
+const leftArrowPopular = document.querySelector('.left-arrow-popular');
+const rigthArrowPopular = document.querySelector('.right-arrow-popular');
 
-[...leftArrow].map(item => {
-  item.addEventListener('click', () => {
-    rows.scrollLeft -= rows.offsetWidth;
-  })
+leftArrowPopular.addEventListener('click', () => {
+  rowsPopular.scrollLeft -= rows.offsetWidth;
 });
 
-[...rigthArrow].map(item => {
-  item.addEventListener('click', () => {
-    rows.scrollLeft += rows.offsetWidth;
-  })
+rigthArrowPopular.addEventListener('click', () => {
+  rowsPopular.scrollLeft += rows.offsetWidth;
 });
 
-/*
-leftArrow.addEventListener('click', () => {
-  rows.scrollLeft -= rows.offsetWidth;
+const rowsContinues = document.querySelector('.continues');
+const leftArrowContinues = document.querySelector('.left-arrow-continues');
+const rigthArrowContinues = document.querySelector('.right-arrow-continues');
+
+leftArrowContinues.addEventListener('click', () => {
+  rowsContinues.scrollLeft -= rows.offsetWidth;
 });
 
-rigthArrow.addEventListener('click', () => {
-  rows.scrollLeft += rows.offsetWidth;
+rigthArrowContinues.addEventListener('click', () => {
+  rowsContinues.scrollLeft += rows.offsetWidth;
 });
-*/
+
+const rowsTrendys = document.querySelector('.trendys');
+const leftArrowTrendys = document.querySelector('.left-arrow-trendys');
+const rigthArrowTrendys = document.querySelector('.right-arrow-trendys');
+
+leftArrowTrendys.addEventListener('click', () => {
+  rowsTrendys.scrollLeft -= rows.offsetWidth;
+});
+
+rigthArrowTrendys.addEventListener('click', () => {
+  rowsTrendys.scrollLeft += rows.offsetWidth;
+});
+
 
 movies.forEach((movie) => {
   movie.addEventListener('mouseenter', (e) => {

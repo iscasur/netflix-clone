@@ -28,6 +28,10 @@ h3[class$=title] {
   line-height: 2;
 }
 
+.wrapper {
+  padding: 0 60px;
+}
+
 .header {
   position: sticky;
   top: 0;
@@ -94,9 +98,10 @@ h3[class$=title] {
   width: 0%;
   transition: ease-out width 1s, ease opacity 1s;
   opacity: 0;
+  float: right;
 }
 .menu__secondary li.search-box.active .search-box__icon {
-  transform: translateX(-214px);
+  transform: translateX(-220px);
 }
 .menu__secondary li.search-box.active .search-box__input {
   opacity: 1;
@@ -128,10 +133,6 @@ h3[class$=title] {
 .menu__secondary li.user .arrow {
   position: absolute;
   right: -2rem;
-}
-
-.wrapper {
-  padding: 0 60px;
 }
 
 .hero {
@@ -219,36 +220,37 @@ h3[class$=title] {
   color: rgba(255, 255, 255, 0.9);
   z-index: 1000;
 }
-.general-content .carrousel-content {
+.general-content .carousel-content {
   width: 100%;
   padding: 20px 0;
   overflow: hidden;
   scroll-behavior: smooth;
 }
-.general-content .carrousel-content .carrousel {
+.general-content .carousel-content .carousel {
   display: flex;
   flex-wrap: nowrap;
   gap: 1rem;
 }
-.general-content .carrousel-content .carrousel__item {
+.general-content .carousel-content .carousel__item {
   min-width: 20%;
   transition: 0.3s ease all;
   position: relative;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   font-size: 1vw;
+  height: 180px;
 }
-.general-content .carrousel-content .carrousel__item img {
+.general-content .carousel-content .carousel__item img {
   width: 100%;
   height: 180px;
   object-fit: cover;
   border-radius: 3px;
 }
-.general-content .carrousel-content .carrousel__item:hover {
+.general-content .carousel-content .carousel__item:hover {
   transform: scale(1.2);
   transform-origin: center;
   z-index: 100;
 }
-.general-content .carrousel-content .carrousel__item .overlay {
+.general-content .carousel-content .carousel__item .overlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -258,10 +260,10 @@ h3[class$=title] {
   width: 100%;
   opacity: 1;
 }
-.general-content .carrousel-content .carrousel__item .overlay .play-button {
+.general-content .carousel-content .carousel__item .overlay .play-button {
   height: 50%;
 }
-.general-content .carrousel-content .carrousel__item .overlay .play-button .fa-play-circle {
+.general-content .carousel-content .carousel__item .overlay .play-button .fa-play-circle {
   position: absolute;
   top: 40%;
   left: 50%;
@@ -270,7 +272,7 @@ h3[class$=title] {
   font-size: 3vw;
   color: #ffffff;
 }
-.general-content .carrousel-content .carrousel__item .overlay .description {
+.general-content .carousel-content .carousel__item .overlay .description {
   position: absolute;
   padding-left: 3%;
   padding-bottom: 3%;

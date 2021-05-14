@@ -1,0 +1,45 @@
+.footer {
+  max-width: 980px;
+  margin: 20px auto;
+  padding: 0 4%;
+  color: gray;
+  font-size: 1.2rem;
+  a {
+    color: gray;
+    text-decoration: none;
+  }
+  &__social {
+    margin-bottom: 2rem;
+    ul {
+      display: flex;
+      list-style: none;
+      font-size: 3rem;
+      i {
+        margin-right: 2rem;
+      }
+    }
+  }
+  &__links {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    li {
+      margin-bottom: 1rem;
+      flex: 0 0 25%;
+    }
+  }
+  &__copy-right {
+    button {
+      background-color: transparent;
+      color: gray;
+      border: 1px solid gray;
+      padding: 0.7rem;
+      margin-bottom: 2rem;
+    }
+  }
+}
