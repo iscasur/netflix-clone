@@ -22,6 +22,11 @@ a {
   margin: 2vw 0;
 }
 
+.continue,
+.trendy {
+  margin-top: -2vw;
+}
+
 h3[class$=title] {
   font-size: 2.6rem;
   font-weight: 600;
@@ -222,9 +227,10 @@ h3[class$=title] {
 }
 .general-content .carousel-content {
   width: 100%;
-  padding: 20px 0;
+  padding: 30px 0;
   overflow: hidden;
   scroll-behavior: smooth;
+  height: 340px;
 }
 .general-content .carousel-content .carousel {
   display: flex;
@@ -236,7 +242,6 @@ h3[class$=title] {
   min-width: 20%;
   transition: 0.3s ease all;
   position: relative;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 .general-content .carousel-content .carousel__item img {
   width: 100%;
@@ -248,11 +253,15 @@ h3[class$=title] {
   transform: scale(1.2);
   transform-origin: center;
   z-index: 100;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 .general-content .carousel-content .carousel__item .item__overlay {
   padding: 1rem;
   background-color: #141414;
   display: none;
+}
+.general-content .carousel-content .carousel__item:hover > .item__overlay {
+  display: block;
 }
 .general-content .carousel-content .carousel__item .overlay__icons {
   display: flex;
