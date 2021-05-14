@@ -106,29 +106,69 @@ let getConfig = function () {
       baseImageURL = data.images.secure_base_url;
       configData = data.images;
       console.log(data);
-      console.log(Object.entries(data.images));
       console.log('Config fetched');
+      getTrendy();
     })
     .catch(function (err) {
       console.log(err);
     });
 };
 
-let getTrendy;
+let getTrendy = function () {
+  let url = ''.concat(baseURL, '/list/7?api_key=', API_KEY);
+  fetch(url)
+    .then((result) => result.json())
+    .then((data) => {
+      console.log(data.items);
+      console.log(
+        'https://image.tmdb.org/t/p/w342' + data.items[0].poster_path
+      );
+      console.log(
+        'https://image.tmdb.org/t/p/w342' + data.items[1].poster_path
+      );
+      console.log(
+        'https://image.tmdb.org/t/p/w342' + data.items[2].poster_path
+      );
+      console.log(
+        'https://image.tmdb.org/t/p/w342' + data.items[3].poster_path
+      );
+      console.log(
+        'https://image.tmdb.org/t/p/w342' + data.items[4].poster_path
+      );
+      console.log(
+        'https://image.tmdb.org/t/p/w342' + data.items[5].poster_path
+      );
+      console.log(
+        'https://image.tmdb.org/t/p/w342' + data.items[6].poster_path
+      );
+      console.log(
+        'https://image.tmdb.org/t/p/w342' + data.items[7].poster_path
+      );
+      console.log(
+        'https://image.tmdb.org/t/p/w342' + data.items[8].poster_path
+      );
+      console.log(
+        'https://image.tmdb.org/t/p/w342' + data.items[9].poster_path
+      );
+      console.log(
+        'https://image.tmdb.org/t/p/w342' + data.items[10].poster_path
+      );
+      console.log(
+        'https://image.tmdb.org/t/p/w342' + data.items[11].poster_path
+      );
+      console.log(
+        'https://image.tmdb.org/t/p/w342' + data.items[12].poster_path
+      );
+      console.log(
+        'https://image.tmdb.org/t/p/w342' + data.items[13].poster_path
+      );
+      console.log(
+        'https://image.tmdb.org/t/p/w342' + data.items[14].poster_path
+      );
+      console.log(
+        'https://image.tmdb.org/t/p/w342' + data.items[15].poster_path
+      );
+    });
+};
 
-// document.addEventListener('DOMContentLoaded', getConfig);
-
-/*
-
-fetch(base_uri + 'list/1' + '?api_key=' + API_KEY)
-  .then((response) => response.json())
-  .then((data) => console.log(data))
-  .catch((error) => console.log(error));
-
-// Trendy
-fetch(base_uri + 'trending/all/week' + '?api_key=' + API_KEY)
-  .then((response) => response.json())
-  .then((data) => console.log(data))
-  .catch((error) => console.log(error));
-
-  */
+document.addEventListener('DOMContentLoaded', getConfig);
