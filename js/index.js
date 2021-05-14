@@ -1,3 +1,4 @@
+// Navbar
 const navbar = document.getElementById('navbar');
 const navbar_height = navbar.offsetHeight;
 
@@ -11,6 +12,7 @@ window.addEventListener('scroll', function () {
   }
 });
 
+// Search input
 const searchBox = document.querySelector('.search-box');
 const searchIcon = document.querySelector('.search-box__icon');
 
@@ -20,18 +22,18 @@ function activateSearch() {
   searchBox.classList.toggle('active');
 }
 
+// Video from hero
 const iframe = document.querySelector('iframe')
 const player = new Vimeo.Player(iframe);
-
 const playButton = document.querySelector('button')
 
 playButton.addEventListener('click', () => {
   player.requestFullscreen().then(function() {
   }).catch(function(error) {
-
   })
 });
 
+// Carousel navigation
 const rows = document.querySelector('.carousel-content');
 const movies = document.querySelectorAll('.carousel__item');
 
@@ -70,7 +72,6 @@ leftArrowTrendys.addEventListener('click', () => {
 rigthArrowTrendys.addEventListener('click', () => {
   rowsTrendys.scrollLeft += rows.offsetWidth;
 });
-
 
 movies.forEach((movie) => {
   movie.addEventListener('mouseenter', (e) => {

@@ -42,12 +42,11 @@
       flex-wrap: nowrap;
       gap: 1rem;
       &__item {
+        background-color: $primay-color;
         min-width: 20%;
         transition: 0.3s ease all;
         position: relative;
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-        font-size: 1vw;
-        height: 180px;
         img {
           width: 100%;
           height: 180px;
@@ -59,33 +58,58 @@
           transform-origin: center;
           z-index: 100;
         }
+        & .item__overlay {
+          padding: 1rem;
+          background-color: $primay-color;
+          display: none;
+        }
         & .overlay {
-          position: absolute;
-          top: 0;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          height: 100%;
-          width: 100%;
-          opacity: 1;
-          & .play-button {
-            height: 50%;
-            & .fa-play-circle {
+          &__icons {
+            display: flex;
+            position: relative;
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            & i {
+              margin-right: 0.5rem;
+              border: 1px solid;
+              border-radius: 50%;
+              padding: 0.7rem 0.8rem;
+              display: flex;
+              align-items: center;
+            }
+            & .fa-chevron-down {
               position: absolute;
-              top: 40%;
-              left: 50%;
-              transform: translate(-50%, -50%);
-              translatey: (-50%);
-              font-size: 3vw;
-              color: #ffffff;
+              right: 0;
             }
           }
-          & .description {
-            position: absolute;
-            padding-left: 3%;
-            padding-bottom: 3%;
-            overflow: hidden;
-            bottom: 0;
+          &__type {
+            display: flex;
+            font-size: 1.3rem;
+            align-items: center;
+            margin-bottom: 0.5rem;
+            & .clasification {
+              border: 1px solid;
+              padding: .1rem 0.5em;
+              margin-right: 1rem;
+            }
+            & .type {
+              margin-right: 1rem;
+            }
+            & .quality {
+              border: 1px solid;
+              font-size: 1rem;
+              color: #999;
+            }
+          }
+          &__tags {
+            & .tags {
+              list-style: none;
+              display: flex;
+              font-size: 1.4rem;
+              li {
+                margin-right: 2rem;
+              }
+            }
           }
         }
       }

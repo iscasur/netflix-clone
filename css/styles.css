@@ -19,7 +19,7 @@ a {
 }
 
 .row {
-  margin: 3vw 0;
+  margin: 2vw 0;
 }
 
 h3[class$=title] {
@@ -232,12 +232,11 @@ h3[class$=title] {
   gap: 1rem;
 }
 .general-content .carousel-content .carousel__item {
+  background-color: #141414;
   min-width: 20%;
   transition: 0.3s ease all;
   position: relative;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-  font-size: 1vw;
-  height: 180px;
 }
 .general-content .carousel-content .carousel__item img {
   width: 100%;
@@ -250,34 +249,55 @@ h3[class$=title] {
   transform-origin: center;
   z-index: 100;
 }
-.general-content .carousel-content .carousel__item .overlay {
+.general-content .carousel-content .carousel__item .item__overlay {
+  padding: 1rem;
+  background-color: #141414;
+  display: none;
+}
+.general-content .carousel-content .carousel__item .overlay__icons {
+  display: flex;
+  position: relative;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.general-content .carousel-content .carousel__item .overlay__icons i {
+  margin-right: 0.5rem;
+  border: 1px solid;
+  border-radius: 50%;
+  padding: 0.7rem 0.8rem;
+  display: flex;
+  align-items: center;
+}
+.general-content .carousel-content .carousel__item .overlay__icons .fa-chevron-down {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
   right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 1;
 }
-.general-content .carousel-content .carousel__item .overlay .play-button {
-  height: 50%;
+.general-content .carousel-content .carousel__item .overlay__type {
+  display: flex;
+  font-size: 1.3rem;
+  align-items: center;
+  margin-bottom: 0.5rem;
 }
-.general-content .carousel-content .carousel__item .overlay .play-button .fa-play-circle {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  translatey: -50%;
-  font-size: 3vw;
-  color: #ffffff;
+.general-content .carousel-content .carousel__item .overlay__type .clasification {
+  border: 1px solid;
+  padding: 0.1rem 0.5em;
+  margin-right: 1rem;
 }
-.general-content .carousel-content .carousel__item .overlay .description {
-  position: absolute;
-  padding-left: 3%;
-  padding-bottom: 3%;
-  overflow: hidden;
-  bottom: 0;
+.general-content .carousel-content .carousel__item .overlay__type .type {
+  margin-right: 1rem;
+}
+.general-content .carousel-content .carousel__item .overlay__type .quality {
+  border: 1px solid;
+  font-size: 1rem;
+  color: #999;
+}
+.general-content .carousel-content .carousel__item .overlay__tags .tags {
+  list-style: none;
+  display: flex;
+  font-size: 1.4rem;
+}
+.general-content .carousel-content .carousel__item .overlay__tags .tags li {
+  margin-right: 2rem;
 }
 
 .footer {

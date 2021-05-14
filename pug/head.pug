@@ -2,15 +2,31 @@
 -var menus = ["Inicio", "Series", "Películas", "Novedades populares", "Mi lista"]
 -var myaccount = ["Buscar", "Referidos", "Notificaciones", "Mi cuenta"]
 
-mixin item(img, title)
+mixin item(img, title, clasification, type, quality)
   .carousel__item
-    figure
+    .item__img
       img(src=img)
-    .overlay
-      .play-button
-        i.far.fa-play-circle
-      .description
-        span.title=title
+    .item__overlay
+      .overlay__icons
+        i.fas.fa-play
+        i.fas.fa-plus
+        i.far.fa-thumbs-up
+        i.far.fa-thumbs-down
+        i.fas.fa-chevron-down
+      .overlay__type
+        span.clasification TV-M
+        span.type Miniserie
+        span.quality HD
+      .overlay__tags
+        ul.tags
+          li De investigación
+          li Docuserie
+          li Social y cultural
+    //- .overlay
+    //-   .play-button
+    //-     i.far.fa-play-circle
+    //-   .description
+    //-     span.title=title
 
 doctype html
 html(lang="es")
