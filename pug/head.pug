@@ -2,7 +2,7 @@
 -var menus = ["Inicio", "Series", "Películas", "Novedades populares", "Mi lista"]
 -var myaccount = ["Buscar", "Referidos", "Notificaciones", "Mi cuenta"]
 
-mixin item(img, title, clasification, type, quality)
+mixin item(img, clasification, type, quality, tag1, tag2, tag3)
   .carousel__item
     .item__img
       img(src=img)
@@ -14,14 +14,14 @@ mixin item(img, title, clasification, type, quality)
         i.far.fa-thumbs-down
         i.fas.fa-chevron-down
       .overlay__type
-        span.clasification TV-M
-        span.type Miniserie
-        span.quality HD
+        span.clasification=clasification
+        span.type=type
+        span.quality=quality
       .overlay__tags
         ul.tags
-          li De investigación
-          li Docuserie
-          li Social y cultural
+          li=tag1
+          li=tag2
+          li=tag3
     //- .overlay
     //-   .play-button
     //-     i.far.fa-play-circle
