@@ -1,0 +1,32 @@
+.modal-overlay.open-modal
+  .modal-container
+    .dialog
+      +itemModal("https://image.tmdb.org/t/p/w342/fhQoQfejY1hUcwyuLgpBrYs6uFt.jpg", 'TV-G', 'Miniserie', 'HD')
+      .info 
+        .info__description
+          span.clasification TV-G
+          span.type Miniserie
+          span.quality HD
+          h4 Ver temporada 4
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quis culpa facere nemo saepe, hic alias accusamus cum cupiditate odit officiis! Ratione deleniti iusto hic error nemo eos, odio sit.
+        .info__tags
+          p
+            span.tag.people Elenco 
+            | Richard Armitage, James Callis, Alejandra Reynoso, más
+          p
+            span.tag.gender Géneros 
+            | Anime de terror, Anime basado en videojuegos, Anime de acción
+          p
+            span.tag.warning Este título es: 
+            | Violento, De miedo, Siniestro
+      .show
+        .show__title
+          h3 Episodios
+        .show__list
+          ol
+            li
+              img(src="https://image.tmdb.org/t/p/w342/fhQoQfejY1hUcwyuLgpBrYs6uFt.jpg", alt="")
+              p.title__show Title 1
+              p.description__show Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam illum natus harum adipisci, optio quia dolore ducimus.
+    button.close-btn
+      i.fas.fa-times

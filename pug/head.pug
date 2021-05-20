@@ -22,11 +22,20 @@ mixin item(img, clasification, type, quality, tag1, tag2, tag3)
           li=tag1
           li=tag2
           li=tag3
-    //- .overlay
-    //-   .play-button
-    //-     i.far.fa-play-circle
-    //-   .description
-    //-     span.title=title
+
+mixin itemModal(img)
+  .modal__item
+    .img
+      img(src=img)
+      .overlay__icons
+        .icons
+          button
+            i.fas.fa-play
+            | Reproducir
+          i.fas.fa-plus
+          i.far.fa-thumbs-up
+          i.far.fa-thumbs-down
+          i.fas.fa-volume-mute
 
 doctype html
 html(lang="es")

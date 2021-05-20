@@ -37,6 +37,8 @@ playButton.addEventListener('click', () => {
 // Carousel navigation
 const rows = document.querySelector('.carousel-content');
 const movies = document.querySelectorAll('.carousel__item');
+const modal = document.querySelector('.modal-overlay');
+const closeModal = document.querySelector('.close-btn');
 
 const rowsPopular = document.querySelector('.populars');
 const leftArrowPopular = document.querySelector('.left-arrow-popular');
@@ -82,12 +84,22 @@ movies.forEach((movie) => {
       element.classList.add('hover');
     }, 300);
   });
+  movie.addEventListener('click', () => {
+    // const element = e.currentTarget;
+    modal.classList.add('open-modal');
+    console.log(modal);
+  });
 });
 
 rows.addEventListener('mouseleave', () => {
   movies.forEach((movie) => movie.classList.remove('hover'));
 });
 
+closeModal.addEventListener('click', () => {
+  modal.classList.remove('open-modal');
+});
+
+/*
 // TMDB
 const API_KEY = '1d03f299b56b7d787bfc3da24f419706';
 const baseURL = 'https://api.themoviedb.org/3/';
@@ -172,3 +184,4 @@ let getTrendy = function () {
 };
 
 document.addEventListener('DOMContentLoaded', getConfig);
+*/

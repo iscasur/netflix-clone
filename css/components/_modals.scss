@@ -1,0 +1,125 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: $brand-background;
+  display: grid;
+  place-items: center;
+  transition: 0.3s ease all;
+  visibility: hidden;
+  z-index: -20;
+
+  &.open-modal {
+    visibility: visible;
+    z-index: 50;
+  }
+
+  & .modal-container {
+    position: absolute;
+    background-color: $primay-color;
+    border-radius: 1rem;
+    width: 70vw;
+    top: 3rem;
+
+    & .img {
+      height: 350px;
+      position: relative;
+
+      img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 1rem 1rem 0 0;
+      }
+
+      & .overlay__icons {
+        & .icons {
+          padding: 2rem;
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          display: flex;
+          align-items: center;
+        }
+        & i {
+          margin-right: 0.5rem;
+          border: 1px solid;
+          border-radius: 50%;
+          padding: 0.7rem 0.8rem;
+        }
+
+        button {
+          padding: 0.5rem 1.5rem;
+          margin-right: 1rem;
+          border-radius: 0.3rem;
+          border: 0;
+          outline: none;
+
+          i.fas.fa-play {
+            border: 0;
+            margin: 0;
+          }
+        }
+
+        & .fa-volume-mute {
+          position: absolute;
+          right: 2rem;
+        }
+      }
+    }
+
+    & .info,
+    .show {
+      padding: 2rem;
+    }
+
+    & .info {
+      display: grid;
+      font-size: 1.6rem;
+      gap: 2rem;
+      grid-template-columns: 2fr 1fr;
+      grid-auto-rows: 1fr 1fr;
+      & .clasification {
+        border: 1px solid;
+        padding: 0.1rem 0.5em;
+        margin-right: 1rem;
+      }
+      & .type {
+        margin-right: 1rem;
+      }
+      & .quality {
+        border: 1px solid;
+        font-size: 0.75rem;
+        color: #999;
+        padding: 0.1rem 0.2rem;
+      }
+      h4 {
+        margin: 2rem 0;
+      }
+      &__tags {
+        .tag {
+          color: gray;
+        }
+
+        p {
+          margin-bottom: 1rem;
+          line-height: 1.4;
+        }
+      }
+    }
+  }
+  & .close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    background: $primay-color;
+    border-radius: 50%;
+    padding: 0.1rem 0.54rem;
+    border-color: transparent;
+    color: $secondary-color;
+    cursor: pointer;
+  }
+}
