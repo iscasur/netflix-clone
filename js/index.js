@@ -99,7 +99,6 @@ closeModal.addEventListener('click', () => {
   modal.classList.remove('open-modal');
 });
 
-/*
 // TMDB
 const API_KEY = '1d03f299b56b7d787bfc3da24f419706';
 const baseURL = 'https://api.themoviedb.org/3/';
@@ -132,56 +131,7 @@ let getTrendy = function () {
     .then((result) => result.json())
     .then((data) => {
       console.log(data.items);
-      console.log(
-        'https://image.tmdb.org/t/p/w342' + data.items[0].poster_path
-      );
-      console.log(
-        'https://image.tmdb.org/t/p/w342' + data.items[1].poster_path
-      );
-      console.log(
-        'https://image.tmdb.org/t/p/w342' + data.items[2].poster_path
-      );
-      console.log(
-        'https://image.tmdb.org/t/p/w342' + data.items[3].poster_path
-      );
-      console.log(
-        'https://image.tmdb.org/t/p/w342' + data.items[4].poster_path
-      );
-      console.log(
-        'https://image.tmdb.org/t/p/w342' + data.items[5].poster_path
-      );
-      console.log(
-        'https://image.tmdb.org/t/p/w342' + data.items[6].poster_path
-      );
-      console.log(
-        'https://image.tmdb.org/t/p/w342' + data.items[7].poster_path
-      );
-      console.log(
-        'https://image.tmdb.org/t/p/w342' + data.items[8].poster_path
-      );
-      console.log(
-        'https://image.tmdb.org/t/p/w342' + data.items[9].poster_path
-      );
-      console.log(
-        'https://image.tmdb.org/t/p/w342' + data.items[10].poster_path
-      );
-      console.log(
-        'https://image.tmdb.org/t/p/w342' + data.items[11].poster_path
-      );
-      console.log(
-        'https://image.tmdb.org/t/p/w342' + data.items[12].poster_path
-      );
-      console.log(
-        'https://image.tmdb.org/t/p/w342' + data.items[13].poster_path
-      );
-      console.log(
-        'https://image.tmdb.org/t/p/w342' + data.items[14].poster_path
-      );
-      console.log(
-        'https://image.tmdb.org/t/p/w342' + data.items[15].poster_path
-      );
     });
 };
 
 document.addEventListener('DOMContentLoaded', getConfig);
-*/

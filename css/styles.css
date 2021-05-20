@@ -457,6 +457,12 @@ h3[class$='title'] {
   border-radius: 1rem;
   width: 70vw;
   top: 3rem;
+  max-height: calc(100vh - 0px);
+  overflow-y: auto;
+}
+
+.modal-overlay .modal-container::-webkit-scrollbar {
+  display: none;
 }
 
 .modal-overlay .modal-container .img {
