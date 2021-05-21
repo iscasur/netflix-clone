@@ -1,4 +1,4 @@
-.modal-overlay
+.modal-overlay.open-modal
   .modal-container
     .dialog
       +itemModal("https://image.tmdb.org/t/p/original/fhQoQfejY1hUcwyuLgpBrYs6uFt.jpg", 'TV-G', 'Miniserie', 'HD')
@@ -22,27 +22,89 @@
       .show
         .show__title
           h3 Episodios
+          button#selectSeason
+            | 2 temporadas
+            i.fas.fa-chevron-down
+        .show__seasons
+          ul#listSeason
+            li
+              button#season1 Temporada 1
+            li
+              button#season2 Temporada 2
         .show__list
-          ol
+          ol#listSeason2.list__available.list__selected
             li
-              img(src="https://image.tmdb.org/t/p/w154/fhQoQfejY1hUcwyuLgpBrYs6uFt.jpg", alt="")
-              p.title__show Title 1
-              p.description__show Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam illum natus harum adipisci, optio quia dolore ducimus.
+              .item__image
+                i.fas.fa-play
+                img(src="https://image.tmdb.org/t/p/w154/c2gsmSQ2Cqv8zosqKOCwRS0GFBS.jpg", alt="")
+              .item__info
+                .title__time 45 mins
+                .title__show Lorem ipsum dolor, sit amet consectetur adipisicing.
+                .description__show Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam illum natus harum adipisci, optio quia dolore ducimus.
             li
-              img(src="https://image.tmdb.org/t/p/w154/fhQoQfejY1hUcwyuLgpBrYs6uFt.jpg", alt="")
-              p.title__show Title 1
-              p.description__show Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam illum natus harum adipisci, optio quia dolore ducimus.
+              .item__image
+                i.fas.fa-play
+                img(src="https://image.tmdb.org/t/p/w154/c2gsmSQ2Cqv8zosqKOCwRS0GFBS.jpg", alt="")
+              .item__info
+                .title__time 45 mins
+                .title__show Lorem ipsum dolor, sit amet consectetur adipisicing.
+                .description__show Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam illum natus harum adipisci, optio quia dolore ducimus.
             li
-              img(src="https://image.tmdb.org/t/p/w154/fhQoQfejY1hUcwyuLgpBrYs6uFt.jpg", alt="")
-              p.title__show Title 1
-              p.description__show Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam illum natus harum adipisci, optio quia dolore ducimus.
+              .item__image
+                i.fas.fa-play
+                img(src="https://image.tmdb.org/t/p/w154/c2gsmSQ2Cqv8zosqKOCwRS0GFBS.jpg", alt="")
+              .item__info
+                .title__time 45 mins
+                .title__show Lorem ipsum dolor, sit amet consectetur adipisicing.
+                .description__show Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam illum natus harum adipisci, optio quia dolore ducimus.
             li
-              img(src="https://image.tmdb.org/t/p/w154/fhQoQfejY1hUcwyuLgpBrYs6uFt.jpg", alt="")
-              p.title__show Title 1
-              p.description__show Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam illum natus harum adipisci, optio quia dolore ducimus.
+              .item__image
+                i.fas.fa-play
+                img(src="https://image.tmdb.org/t/p/w154/c2gsmSQ2Cqv8zosqKOCwRS0GFBS.jpg", alt="")
+              .item__info
+                .title__time 45 mins
+                .title__show Lorem ipsum dolor, sit amet consectetur adipisicing.
+                .description__show Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam illum natus harum adipisci, optio quia dolore ducimus.
             li
-              img(src="https://image.tmdb.org/t/p/w154/fhQoQfejY1hUcwyuLgpBrYs6uFt.jpg", alt="")
-              p.title__show Title 1
-              p.description__show Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam illum natus harum adipisci, optio quia dolore ducimus.
+              .item__image
+                i.fas.fa-play
+                img(src="https://image.tmdb.org/t/p/w154/c2gsmSQ2Cqv8zosqKOCwRS0GFBS.jpg", alt="")
+              .item__info
+                .title__time 45 mins
+                .title__show Lorem ipsum dolor, sit amet consectetur adipisicing.
+                .description__show Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam illum natus harum adipisci, optio quia dolore ducimus.
+          ol#listSeason1.list__available
+            li
+              .item__image
+                i.fas.fa-play
+                img(src="https://image.tmdb.org/t/p/w154/fhQoQfejY1hUcwyuLgpBrYs6uFt.jpg", alt="")
+              .item__info
+                .title__time 45 mins
+                .title__show Lorem ipsum dolor, sit amet consectetur adipisicing.
+                .description__show Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam illum natus harum adipisci, optio quia dolore ducimus.
+            li
+              .item__image
+                i.fas.fa-play
+                img(src="https://image.tmdb.org/t/p/w154/fhQoQfejY1hUcwyuLgpBrYs6uFt.jpg", alt="")
+              .item__info
+                .title__time 45 mins
+                .title__show Lorem ipsum dolor, sit amet consectetur adipisicing.
+                .description__show Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam illum natus harum adipisci, optio quia dolore ducimus.
+            li
+              .item__image
+                i.fas.fa-play
+                img(src="https://image.tmdb.org/t/p/w154/fhQoQfejY1hUcwyuLgpBrYs6uFt.jpg", alt="")
+              .item__info
+                .title__time 45 mins
+                .title__show Lorem ipsum dolor, sit amet consectetur adipisicing.
+                .description__show Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam illum natus harum adipisci, optio quia dolore ducimus.
+            li
+              .item__image
+                i.fas.fa-play
+                img(src="https://image.tmdb.org/t/p/w154/fhQoQfejY1hUcwyuLgpBrYs6uFt.jpg", alt="")
+              .item__info
+                .title__time 45 mins
+                .title__show Lorem ipsum dolor, sit amet consectetur adipisicing.
+                .description__show Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam illum natus harum adipisci, optio quia dolore ducimus.
     button.close-btn
       i.fas.fa-times

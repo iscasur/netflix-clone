@@ -87,7 +87,6 @@ movies.forEach((movie) => {
   movie.addEventListener('click', () => {
     // const element = e.currentTarget;
     modal.classList.add('open-modal');
-    console.log(modal);
   });
 });
 
@@ -99,6 +98,38 @@ closeModal.addEventListener('click', () => {
   modal.classList.remove('open-modal');
 });
 
+// Select season
+
+const selectSeason = document.getElementById('selectSeason');
+const listSeason = document.getElementById('listSeason');
+
+selectSeason.addEventListener('click', () => {
+  listSeason.classList.toggle('open-list');
+});
+
+// Season that show
+
+const season1 = document.getElementById('season1');
+const season2 = document.getElementById('season2');
+
+const listSeason1 = document.getElementById('listSeason1');
+const listSeason2 = document.getElementById('listSeason2');
+
+season1.addEventListener('click', () => {
+  listSeason1.classList.add('list__selected');
+  if (listSeason2.classList.contains('list__selected')) {
+    listSeason2.classList.remove('list__selected');
+  }
+});
+
+season2.addEventListener('click', () => {
+  listSeason2.classList.add('list__selected');
+  if (listSeason1.classList.contains('list__selected')) {
+    listSeason1.classList.remove('list__selected');
+  }
+});
+
+/*
 // TMDB
 const API_KEY = '1d03f299b56b7d787bfc3da24f419706';
 const baseURL = 'https://api.themoviedb.org/3/';
@@ -135,3 +166,4 @@ let getTrendy = function () {
 };
 
 document.addEventListener('DOMContentLoaded', getConfig);
+*/

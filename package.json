@@ -4,6 +4,8 @@
   "description": "This is a clone of a popular streaming platform for videos.",
   "main": "index.js",
   "scripts": {
+    "pug": "pug pug/index.pug -P -o ./",
+    "pug-watch": "pug pug/index.pug -w -P -o ./",
     "dev": "pug pug/index.pug -P -o ./ && sass ./css/styles.scss ./css/styles.css"
   },
   "repository": {
