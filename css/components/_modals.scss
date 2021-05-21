@@ -27,24 +27,31 @@
     max-width: 950px;
     overflow-y: auto;
 
+    & .dialog {
+      padding-bottom: 5rem;
+    }
+
     &::-webkit-scrollbar {
       display: none;
     }
 
     & .img {
-      height: 350px;
+      height: 450px;
       position: relative;
 
       img {
         width: 100%;
-        height: 350px;
+        height: 450px;
         object-fit: cover;
         border-radius: 1rem 1rem 0 0;
       }
 
       & .overlay__icons {
+        position: relative;
+        z-index: 10;
+
         & .icons {
-          padding: 2rem;
+          padding: 2rem 4rem;
           position: absolute;
           bottom: 0;
           width: 100%;
@@ -85,9 +92,22 @@
       }
     }
 
+    & .modal__item {
+      position: relative;
+    }
+
+    & .overlay__background {
+      display: flex;
+      background: linear-gradient(to top, #141414, transparent 50%);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+    }
+
     & .info,
     .show {
-      padding: 2rem;
+      padding: 2rem 4rem;
     }
 
     & .info {
@@ -129,7 +149,7 @@
       display: flex;
       justify-content: flex-end;
       position: absolute;
-      right: 2rem;
+      right: 4rem;
 
       ul {
         display: flex;
@@ -180,6 +200,7 @@
         align-items: center;
         width: 180px;
         justify-content: center;
+        cursor: pointer;
 
         i {
           margin-left: 1rem;

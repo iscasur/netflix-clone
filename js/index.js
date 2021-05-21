@@ -111,21 +111,42 @@ selectSeason.addEventListener('click', () => {
 
 const season1 = document.getElementById('season1');
 const season2 = document.getElementById('season2');
+const season3 = document.getElementById('season3');
 
 const listSeason1 = document.getElementById('listSeason1');
 const listSeason2 = document.getElementById('listSeason2');
+const listSeason3 = document.getElementById('listSeason3');
 
 season1.addEventListener('click', () => {
   listSeason1.classList.add('list__selected');
-  if (listSeason2.classList.contains('list__selected')) {
+  if (
+    listSeason2.classList.contains('list__selected') ||
+    listSeason3.classList.contains('list__selected')
+  ) {
     listSeason2.classList.remove('list__selected');
+    listSeason3.classList.remove('list__selected');
   }
 });
 
 season2.addEventListener('click', () => {
   listSeason2.classList.add('list__selected');
-  if (listSeason1.classList.contains('list__selected')) {
+  if (
+    listSeason1.classList.contains('list__selected') ||
+    listSeason3.classList.contains('list__selected')
+  ) {
     listSeason1.classList.remove('list__selected');
+    listSeason3.classList.remove('list__selected');
+  }
+});
+
+season3.addEventListener('click', () => {
+  listSeason3.classList.add('list__selected');
+  if (
+    listSeason1.classList.contains('list__selected') ||
+    listSeason2.classList.contains('list__selected')
+  ) {
+    listSeason1.classList.remove('list__selected');
+    listSeason2.classList.remove('list__selected');
   }
 });
 

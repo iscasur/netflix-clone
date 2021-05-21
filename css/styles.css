@@ -463,25 +463,34 @@ h3[class$='title'] {
   overflow-y: auto;
 }
 
+.modal-overlay .modal-container .dialog {
+  padding-bottom: 5rem;
+}
+
 .modal-overlay .modal-container::-webkit-scrollbar {
   display: none;
 }
 
 .modal-overlay .modal-container .img {
-  height: 350px;
+  height: 450px;
   position: relative;
 }
 
 .modal-overlay .modal-container .img img {
   width: 100%;
-  height: 350px;
+  height: 450px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 1rem 1rem 0 0;
 }
 
+.modal-overlay .modal-container .img .overlay__icons {
+  position: relative;
+  z-index: 10;
+}
+
 .modal-overlay .modal-container .img .overlay__icons .icons {
-  padding: 2rem;
+  padding: 2rem 4rem;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -531,9 +540,25 @@ h3[class$='title'] {
   right: 2rem;
 }
 
+.modal-overlay .modal-container .modal__item {
+  position: relative;
+}
+
+.modal-overlay .modal-container .overlay__background {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: -webkit-gradient(linear, left bottom, left top, from(#141414), color-stop(50%, transparent));
+  background: linear-gradient(to top, #141414, transparent 50%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
 .modal-overlay .modal-container .info,
 .modal-overlay .modal-container .show {
-  padding: 2rem;
+  padding: 2rem 4rem;
 }
 
 .modal-overlay .modal-container .info {
@@ -584,7 +609,7 @@ h3[class$='title'] {
       -ms-flex-pack: end;
           justify-content: flex-end;
   position: absolute;
-  right: 2rem;
+  right: 4rem;
 }
 
 .modal-overlay .modal-container .show__seasons ul {
@@ -651,6 +676,7 @@ h3[class$='title'] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  cursor: pointer;
 }
 
 .modal-overlay .modal-container .show__title button i {
